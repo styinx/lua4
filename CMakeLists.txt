@@ -141,5 +141,5 @@ add_library(lualib ${SOURCES_LIB})
 add_executable(luai src/lua/lua.c)
 add_executable(luac src/luac/luac.c ${SOURCES_LUAC})
 
-target_link_libraries(luai lualib lua)
+target_link_libraries(luai lualib lua m)
 target_link_libraries(luac lualib lua)
